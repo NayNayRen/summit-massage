@@ -1,83 +1,88 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico');/* import for cursive text */
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
 
-.aroma_box{
-  background: url('images/incense_3.jpg');
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.aroma_box {
+  background: url("images/incense_3.jpg");
   background-position: center;
   background-size: cover;
   border-top: 1px solid rgba(245, 245, 245, 0.75);
   position: relative;
 }
 
-.benefits_box{
+.benefits_box {
   margin-bottom: 10px;
 }
 
-body{
-  background: url('images/night_sky.jpg');
+body {
+  background: url("images/night_sky.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  font-family: 'Raleway', sans-serif;
-  display: block;
-  height: 100%;
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
   margin: 0;
+  padding: 0;
 }
 
-.black_background{
-  background-color: rgba(0, 0, 0, .75);
+.black_background {
+  background-color: rgba(0, 0, 0, 0.95);
   border-top: 1px solid rgba(245, 245, 245, 0.75);
   padding: 5px;
 }
 
-.black_background_2{
-  background-color: rgba(0, 0, 0, .75);
+.black_background_2 {
+  background-color: rgba(0, 0, 0, 0.95);
   border-top: 1px solid rgba(245, 245, 245, 0.75);
   padding: 5px;
 }
 
-#center_text{
+#center_text {
   text-align: center;
 }
 
-.contact_container{
+.contact_container {
   display: grid;
   text-align: center;
 }
-.contact_box p{
+.contact_box p {
   font-weight: bold;
   margin-bottom: -2px;
 }
-.contact_box span{
+.contact_box span {
   font-style: italic;
 }
 
-.deep_box{
+.deep_box {
   border-top: 1px solid rgba(245, 245, 245, 0.75);
-  background: url('images/deep_massage_2.jpg');
+  background: url("images/deep_massage_2.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
 }
 
-.dwn_button{
+.dwn_button {
   font-size: 10px;
   text-decoration: none;
   padding: 5px;
-  color: rgba(245, 245, 245, 1);
-  transition: color 500ms ease;
-  background: rgba(0, 191, 255, .25);
-  border-radius: 5px 0px 0px 0px;/* top left, top right, bottom right, bottom left */
+  color: #000;
+  transition: color 250ms ease;
+  background: rgba(0, 191, 255, 1);
+  border-radius: 5px 0px 0px 0px; /* top left, top right, bottom right, bottom left */
   position: absolute;
   right: 0;
+  text-shadow: none;
   top: 38px;
 }
-.dwn_button:hover{
-  color: rgba(245, 245, 245, .25);
-  transition: color 500ms ease;
+.dwn_button:hover {
+  color: #fff;
 }
 
-.fa{
+.fa {
   padding: 10px;
   font-size: 30px;
   width: 30px;
@@ -86,27 +91,27 @@ body{
   margin: 5px 2px;
   transition: opacity 500ms ease;
 }
-.fa:hover{
+.fa:hover {
   opacity: 0.7;
   transition: opacity 500ms ease;
 }
-.fa-facebook{
-  background: #3B5998;
+.fa-facebook {
+  background: #3b5998;
   color: white;
 }
-.fa-twitter{
-  background: #55ACEE;
+.fa-twitter {
+  background: #55acee;
   color: white;
 }
-.fa-google{
+.fa-google {
   background: #dd4b39;
   color: white;
 }
-.fa-linkedin{
+.fa-linkedin {
   background: #007bb5;
   color: white;
 }
-.fa-instagram{
+.fa-instagram {
   background: #125688;
   color: white;
 }
@@ -117,353 +122,368 @@ body{
   animation-name: fade;
   animation-duration: 5s;
 }
-footer{
-  border-top: 1px solid #FFFFFF;
+footer {
+  border-top: 1px solid #ffffff;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 100%;
   margin-top: 5px;
   position: relative;
 }
-footer img{
-  border:0;
+footer img {
+  border: 0;
   width: 50px;
   position: absolute;
   right: 10px;
   top: 50%;
 }
 
-h2{
+h2 {
   font-style: italic;
   padding-top: 10px;
   text-align: center;
 }
 
-h3{
+h3 {
   padding-left: 5px;
 }
 
-.header_container{
-  background-color: rgba(0, 0, 0, .5);
+.header_container {
+  background-color: rgba(0, 0, 0, 0.5);
   display: grid;
   grid-template-columns: 70% 30%;
   width: 100%;
   height: auto;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
 }
-.header_container div{
+.header_container div {
   text-align: center;
 }
 
-.hours_container{
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.hours_container {
   display: flex;
   justify-content: center;
 }
 
-li{
+li {
   font-size: 14px;
   margin-left: -10px;
   padding: 5px;
 }
 
-.main_container{
-  background-color: rgba(0, 0, 0, .5);
+.main_container {
+  background-color: rgba(0, 0, 0, 0.5);
   margin-top: 5px;
-  border-top: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
-.main_box{
-  color: #FFFFFF;
+.main_box {
+  color: #ffffff;
   max-width: 1000px;
   text-shadow: 1px 1px 1px #000000;
   margin-top: -20px;
   position: relative;
 }
-.main_box p{
+.main_box p {
   text-align: center;
   font-size: 14px;
 }
 
-.name{
+.name {
   font-size: 1.45rem;
   margin-top: 10px;
   color: rgba(255, 255, 255, 1);
 }
-.nav_box{
-  background: rgba(0,0,0, .5);
+.nav_box {
+  background-color: #000;
   display: flex;
   flex-direction: column;
   padding: 15px 5px;
   text-align: center;
-  border-left: 1px solid #FFFFFF;
+  border-left: 1px solid #ffffff;
 }
-.nav_box a{
+.nav_box a {
   text-decoration: none;
-  transition: color 500ms ease;
-  color: #FFFFFF;
+  transition: color 250ms ease;
+  color: #ffffff;
   font-size: 1rem;
 }
-.nav_box a:hover{
+.nav_box a:hover {
   color: rgba(245, 245, 245, 0.25);
-  transition: color 500ms ease;
 }
 
-.overlay{
-  display:inline;
+.overlay {
+  display: inline;
 }
 
-.shiatsu_box{
+.shiatsu_box {
   position: relative;
   border-left: 1px solid rgba(245, 245, 245, 0.75);
-  background: url('images/shiatsu_massage.jpg');
+  background: url("images/shiatsu_massage.jpg");
   background-position: center;
   background-size: cover;
 }
 
-.slogan{
+.slogan {
   font-style: italic;
   font-size: 1.15rem;
-  color: rgba(0, 191, 255, .75);
+  color: rgba(0, 191, 255, 0.75);
 }
 
-.stone_box{
+.stone_box {
   border-top: 1px solid rgba(245, 245, 245, 0.75);
-  background: url('images/stones.jpg');
+  background: url("images/stones.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
 }
 
-#signature{
-  font-family: 'Pacifico', cursive;
+#signature {
+  font-family: "Pacifico", cursive;
   font-size: 1.5rem;
 }
 
-table{
-  background: url('images/candle_2.jpg');
+table {
+  background: url("images/candle_2.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   text-align: center;
 }
 
-td{
+td {
   padding: 5px;
 }
 
-.teal_text{
+.teal_text {
   font-size: 1rem;
-  color: rgba(0, 191, 255, .75);
+  color: rgba(0, 191, 255, 0.75);
 }
 
-tr:nth-child(even){
-  background: rgba(0, 191, 255, .25);
-  border-top: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
+tr:nth-child(even) {
+  background: rgba(0, 191, 255, 0.25);
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
-tr:nth-child(odd){
+tr:nth-child(odd) {
   font-weight: bold;
   font-size: 1.15rem;
 }
 
-.therapy_container_1{
+.therapy_container_1 {
   display: grid;
 }
-.therapy_container_2{
+.therapy_container_2 {
   display: grid;
 }
 
-.top_button:hover{
-  color: rgba(245, 245, 245, .25);
+.top_button:hover {
+  color: rgba(245, 245, 245, 0.25);
   transition: color 500ms ease;
 }
 
-.up_button{
+.up_button {
   font-size: 10px;
   text-decoration: none;
   padding: 5px;
-  color: rgba(245, 245, 245, 1);
-  transition: color 500ms ease;
-  background: rgba(0, 191, 255, .25);
+  color: #000;
+  transition: color 250ms ease;
+  background: rgba(0, 191, 255, 1);
   border-radius: 0px 0px 0px 5px;
   position: absolute;
   right: 0;
+  text-shadow: none;
 }
-.up_button:hover{
-  color: rgba(245, 245, 245, .25);
-  transition: color 500ms ease;
+.up_button:hover {
+  color: #fff;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
 @-webkit-keyframes fade {
-from {opacity: .4}
-to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes fade {
-from {opacity: .4}
-to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* SCREEN SIZES 600px - 900px */
-@media(min-width: 600px){
-
-  .black_background{
+@media (min-width: 600px) {
+  .black_background {
     background: none;
     border-top: none;
     padding: 5px;
   }
-  .benefits_box{
+  .benefits_box {
     max-width: 100%;
     margin-left: 20px;
   }
-  .deep_box:hover .overlay{
+  .deep_box:hover .overlay {
     height: 100%;
   }
-  .overlay{
+  .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 191, 255, .75);
+    background: rgba(0, 191, 255, 0.75);
     overflow: hidden;
     height: 0;
     margin: 0;
     transition: 1s ease;
   }
-  .shiatsu_box:hover .overlay{
+  .shiatsu_box:hover .overlay {
     height: 100%;
   }
-  .therapy_container_1{
+  .therapy_container_1 {
     grid-template-columns: 50% 50%;
   }
-  .therapy_container_1 h3{
+  .therapy_container_1 h3 {
     margin-top: 2px;
   }
-  .therapy_container_2{
+  .therapy_container_2 {
     grid-template-columns: 50% 50%;
   }
-  .therapy_container_2 h3{
+  .therapy_container_2 h3 {
     margin-top: 2px;
   }
+}
 
-  /* SCREEN SIZES 900px AND LARGER */
-@media(min-width: 900px){
-
-  .aroma_box{
+/* SCREEN SIZES 900px AND LARGER */
+@media (min-width: 900px) {
+  .aroma_box {
     border-top: 1px solid rgba(245, 245, 245, 0.75);
   }
-  .benefits_box{
+  .benefits_box {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .black_background{
+  .black_background {
     background: none;
     border-top: none;
     padding: 20px;
   }
-  #box_padding{
+  #box_padding {
     padding: 10px;
   }
-  .deep_box{
+  .deep_box {
     border-top: 1px solid rgba(245, 245, 245, 0.75);
   }
-  .deep_box:hover .overlay{
+  .deep_box:hover .overlay {
     height: 80%;
   }
-  .dwn_button{
+  .dwn_button {
     margin-top: 3px;
     font-size: 15px;
   }
-  footer{
+  footer {
     margin-top: 10px;
   }
-  footer img{
+  footer img {
     width: 75px;
   }
-  h2, h3{
+  h2,
+  h3 {
     padding: 10px 10px;
   }
-  .header_container{
+  .header_container {
     grid-template-columns: 90% 10%;
   }
-  li{
+  li {
     font-size: 18px;
     margin-left: 0;
     padding: 15px;
   }
-  .main_container{
+  .main_container {
     width: 100%;
     margin-top: 20px;
   }
-  .main_box{
+  .main_box {
     margin: auto;
     height: 100%;
     margin-top: -20px;
   }
-  .main_box p{
+  .main_box p {
     font-size: 18px;
   }
-  .name{
+  .name {
     font-size: 50px;
     margin-left: 190px;
   }
-  .nav_box a{
+  .nav_box a {
     font-size: 20px;
   }
-  .overlay{
+  .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 191, 255, .75);
+    background: rgba(0, 191, 255, 0.75);
     overflow: hidden;
     height: 0;
     margin: 0;
     transition: 1s ease;
   }
-  .shiatsu_box:hover .overlay{
+  .shiatsu_box:hover .overlay {
     height: 75%;
   }
-  .slogan{
+  .slogan {
     font-size: 30px;
     margin-top: 25px;
   }
-  .stone_box{
+  .stone_box {
     border-left: 1px solid rgba(245, 245, 245, 0.75);
   }
-  table{
+  table {
     width: 700px;
     margin-top: 50px;
   }
-  .teal_text{
+  .teal_text {
     font-size: 22px;
   }
-  tr:nth-child(odd){
+  tr:nth-child(odd) {
     font-size: 22px;
   }
-  tr:nth-child(even){
+  tr:nth-child(even) {
     font-size: 20px;
   }
-  .therapy_container_1{
+  .therapy_container_1 {
     grid-template-columns: 70% 30%;
     max-width: 100%;
   }
-  .therapy_container_2{
+  .therapy_container_2 {
     grid-template-columns: 30% 70%;
     max-width: 100%;
   }
-  ul{
+  ul {
     list-style-type: none;
     margin-top: -1px;
   }
-  .up_button{
+  .up_button {
     font-size: 15px;
   }
 }
