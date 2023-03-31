@@ -185,13 +185,13 @@ main {
 .main_container {
   background-color: rgba(0, 0, 0, 0.75);
   /* margin-top: 5px; */
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 .main_box {
   color: #ffffff;
   max-width: 1000px;
-  text-shadow: 1px 1px 1px #000000;
+  text-shadow: 1px 1px 1px #000;
   /* margin-top: -20px; */
   position: relative;
 }
@@ -211,7 +211,7 @@ main {
   flex-direction: column;
   padding: 15px 20px;
   text-align: center;
-  border-left: 1px solid #ffffff;
+  border-left: 1px solid #fff;
 }
 .nav_box a {
   text-decoration: none;
