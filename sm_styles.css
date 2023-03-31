@@ -223,9 +223,9 @@ main {
   color: rgba(245, 245, 245, 0.25);
 }
 
-.overlay {
+/* .overlay {
   display: inline;
-}
+} */
 
 .shiatsu_box {
   position: relative;
@@ -381,9 +381,9 @@ ul {
   .deep_box {
     border-top: 1px solid rgba(245, 245, 245, 0.75);
   }
-  .deep_box:hover .overlay {
+  /* .deep_box:hover .overlay {
     height: 80%;
-  }
+  } */
   .dwn_button {
     margin-top: 3px;
     font-size: 15px;
@@ -430,15 +430,15 @@ ul {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 191, 255, 0.85);
+    background: rgba(0, 191, 255, 1);
     overflow: hidden;
     height: 0;
     margin: 0;
     transition: height 500ms ease;
   }
-  .shiatsu_box:hover .overlay {
+  /* .shiatsu_box:hover .overlay {
     height: 75%;
-  }
+  } */
   .slogan {
     font-size: 30px;
     margin-top: 25px;
@@ -487,21 +487,27 @@ ul {
     margin-left: 20px;
   }
   .deep_box:hover .overlay {
-    height: 100%;
+    height: 80%;
   }
   .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
     position: absolute;
+    text-shadow: none;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 191, 255, 0.85);
+    background: rgba(0, 191, 255, 1);
     overflow: hidden;
     height: 0;
     margin: 0;
     transition: height 500ms ease;
   }
   .shiatsu_box:hover .overlay {
-    height: 100%;
+    height: 80%;
   }
   .therapy_container_1 {
     grid-template-columns: 50% 50%;
