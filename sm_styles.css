@@ -238,7 +238,7 @@ main {
 .slogan {
   font-style: italic;
   font-size: 1.15rem;
-  color: rgba(0, 191, 255, 0.75);
+  color: rgba(0, 191, 255, 1);
 }
 
 .social_box {
@@ -300,13 +300,13 @@ td {
 
 .teal_text {
   font-size: 1rem;
-  color: rgba(0, 191, 255, 0.75);
+  color: rgba(0, 191, 255, 1);
 }
 
 tr:nth-child(even) {
-  background: rgba(0, 191, 255, 0.25);
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+  background: rgba(0, 191, 255, 0.5);
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 tr:nth-child(odd) {
   font-weight: bold;
@@ -362,50 +362,7 @@ ul {
   }
 }
 
-/* SCREEN SIZES 600px - 900px */
-@media (min-width: 600px) {
-  .black_background {
-    background: none;
-    border-top: none;
-    padding: 5px;
-  }
-  .benefits_box {
-    max-width: 100%;
-    margin-left: 20px;
-  }
-  .deep_box:hover .overlay {
-    height: 100%;
-  }
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 191, 255, 0.75);
-    overflow: hidden;
-    height: 0;
-    margin: 0;
-    transition: 1s ease;
-  }
-  .shiatsu_box:hover .overlay {
-    height: 100%;
-  }
-  .therapy_container_1 {
-    grid-template-columns: 50% 50%;
-  }
-  .therapy_container_1 h3 {
-    margin-top: 2px;
-  }
-  .therapy_container_2 {
-    grid-template-columns: 50% 50%;
-  }
-  .therapy_container_2 h3 {
-    margin-top: 2px;
-  }
-}
-
-/* SCREEN SIZES 900px AND LARGER */
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .aroma_box {
     border-top: 1px solid rgba(245, 245, 245, 0.75);
   }
@@ -473,11 +430,11 @@ ul {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 191, 255, 0.75);
+    background: rgba(0, 191, 255, 0.85);
     overflow: hidden;
     height: 0;
     margin: 0;
-    transition: 1s ease;
+    transition: height 500ms ease;
   }
   .shiatsu_box:hover .overlay {
     height: 75%;
@@ -516,5 +473,46 @@ ul {
   }
   .up_button {
     font-size: 15px;
+  }
+}
+
+@media (min-width: 700px) {
+  .black_background {
+    background: none;
+    border-top: none;
+    padding: 5px;
+  }
+  .benefits_box {
+    max-width: 100%;
+    margin-left: 20px;
+  }
+  .deep_box:hover .overlay {
+    height: 100%;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 191, 255, 0.85);
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+    transition: height 500ms ease;
+  }
+  .shiatsu_box:hover .overlay {
+    height: 100%;
+  }
+  .therapy_container_1 {
+    grid-template-columns: 50% 50%;
+  }
+  .therapy_container_1 h3 {
+    margin-top: 2px;
+  }
+  .therapy_container_2 {
+    grid-template-columns: 50% 50%;
+  }
+  .therapy_container_2 h3 {
+    margin-top: 2px;
   }
 }
