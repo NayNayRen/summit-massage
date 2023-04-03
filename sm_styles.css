@@ -152,12 +152,63 @@ h3 {
   padding-left: 5px;
 }
 
+.hamburger_menu {
+  align-items: center;
+  background-color: #000;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  justify-content: space-evenly;
+  left: 0;
+  /* padding: 10px 15px; */
+  position: absolute;
+  top: calc(100% + 1px);
+  width: 75px;
+}
+
+.hamburger_menu:hover .hamburger_menu_bar {
+  background-color: rgba(0, 191, 255, 1);
+}
+
+.hamburger_menu_bar {
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  opacity: 1;
+  transition: all 250ms ease;
+}
+
+.header_box {
+  position: relative;
+}
+
+.hamburger_bar_one_hide {
+  opacity: 0;
+}
+
+.hamburger_bar_two_rotate {
+  background-color: rgba(0, 191, 255, 1);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+}
+
+.hamburger_bar_three_rotate {
+  background-color: rgba(0, 191, 255, 1);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+}
+
 .header_container {
   background-color: #000;
   width: 100%;
   height: auto;
   border-bottom: 1px solid #fff;
-  padding: 10px 0 0 0;
+  padding: 0;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -167,14 +218,14 @@ h3 {
   font-size: 30px;
   color: #fff;
   margin: 0;
-  padding: 0 0 10px 10px;
+  padding: 20px 0 10px 10px;
 }
 
 .header_slogan {
   font-style: italic;
   font-size: 18px;
   color: rgba(0, 191, 255, 1);
-  padding: 0 0 10px 10px;
+  padding: 0 0 20px 10px;
   display: block;
   text-align: left;
 }
@@ -206,7 +257,7 @@ main {
   background-color: rgba(0, 0, 0, 0.75);
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  padding-top: 150px;
+  padding-top: 125px;
 }
 
 .main_container ~ .main_container {
@@ -227,23 +278,34 @@ main {
 }
 
 .nav_box {
+  align-items: center;
   background-color: #000;
   display: flex;
   flex-direction: column;
-  padding: 15px 20px;
+  justify-content: space-evenly;
+  height: 100%;
+  position: absolute;
+  right: -100%;
+  top: 0;
   text-align: center;
   border-left: 1px solid #fff;
+  width: 150px;
+  transition: right 250ms ease;
 }
 
 .nav_box a {
   text-decoration: none;
   transition: color 250ms ease;
-  color: #ffffff;
+  color: #fff;
   font-size: 1rem;
 }
 
 .nav_box a:hover {
   color: #fff;
+}
+
+.nav_box_display {
+  right: 0;
 }
 
 .shiatsu_box {
@@ -376,7 +438,7 @@ ul {
   }
 }
 
-/* 700px to 1000px WIDE SCREENS */
+/* GREATER THAN 700px WIDE SCREENS */
 @media (min-width: 700px) {
   .black_background {
     background: none;
@@ -391,6 +453,18 @@ ul {
 
   .deep_box:hover .overlay {
     height: 80%;
+  }
+
+  .header_name {
+    font-size: 40px;
+    padding: 0 0 15px 0;
+    text-align: center;
+  }
+
+  .header_slogan {
+    font-size: 25px;
+    padding: 0 0 10px 0;
+    text-align: center;
   }
 
   .overlay {
@@ -432,7 +506,7 @@ ul {
   }
 }
 
-/* LARGER THAN 1000px WIDE SCREENS */
+/* GREATER THAN 1000px WIDE SCREENS */
 @media (min-width: 1000px) {
   .aroma_box {
     border-top: 1px solid rgba(245, 245, 245, 0.75);
@@ -475,16 +549,17 @@ ul {
     padding: 10px 10px;
   }
 
+  .hamburger_menu {
+    display: none;
+  }
+
   .header_name {
     font-size: 50px;
-    padding: 0 0 20px 0;
-    text-align: center;
   }
 
   .header_slogan {
     font-size: 30px;
-    padding: 0 0 20px 0;
-    text-align: center;
+    padding: 0 0 10px 0;
   }
 
   li {
@@ -506,6 +581,10 @@ ul {
 
   .main_box p {
     font-size: 18px;
+  }
+
+  .nav_box {
+    right: 0;
   }
 
   .nav_box a {
