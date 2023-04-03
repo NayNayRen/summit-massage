@@ -6,16 +6,35 @@
   box-sizing: border-box;
 }
 
+#about,
+#benefits,
+#contact,
+#therapy {
+  position: absolute;
+  top: -120px;
+}
+
 .aroma_box {
   background: url("images/incense_3.jpg");
   background-position: center;
   background-size: cover;
-  border-top: 1px solid rgba(245, 245, 245, 0.75);
+  /* border-top: 1px solid rgba(245, 245, 245, 0.75); */
   position: relative;
 }
 
 .benefits_box {
   margin-bottom: 10px;
+}
+
+.benefits_box li {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.benefits_box ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 body {
@@ -27,6 +46,7 @@ body {
   font-family: "Raleway", sans-serif;
   height: 100vh;
   margin: 0;
+  overflow-x: hidden;
   padding: 0;
 }
 
@@ -34,12 +54,14 @@ body {
   background-color: rgba(0, 0, 0, 0.95);
   border-top: 1px solid rgba(245, 245, 245, 0.75);
   padding: 5px;
+  margin: 0;
 }
 
 .black_background_2 {
   background-color: rgba(0, 0, 0, 0.95);
   border-top: 1px solid rgba(245, 245, 245, 0.75);
   padding: 5px;
+  margin: 0;
 }
 
 #center_text {
@@ -118,7 +140,7 @@ footer {
   -webkit-box-pack: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.75);
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #fff;
   color: #ffffff;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -149,7 +171,9 @@ h2 {
 }
 
 h3 {
+  color: rgba(0, 191, 255, 1);
   padding-left: 5px;
+  text-shadow: 0 1px 1px #000;
 }
 
 .hamburger_menu {
@@ -165,8 +189,8 @@ h3 {
   left: 0;
   /* padding: 10px 15px; */
   position: absolute;
-  top: calc(100% + 1px);
-  width: 75px;
+  top: 100%;
+  width: 65px;
 }
 
 .hamburger_menu:hover .hamburger_menu_bar {
@@ -243,18 +267,24 @@ html {
   justify-content: center;
 }
 
-li {
-  font-size: 14px;
-  margin-left: -10px;
-  padding: 5px;
-}
-
 main {
   min-height: 100%;
 }
 
+.main_box {
+  color: #fff;
+  max-width: 1000px;
+  /* margin-top: -20px; */
+  position: relative;
+}
+
+.main_box p {
+  text-align: center;
+  font-size: 16px;
+}
+
 .main_container {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.85);
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   padding-top: 125px;
@@ -262,19 +292,6 @@ main {
 
 .main_container ~ .main_container {
   padding-top: 0;
-}
-
-.main_box {
-  color: #fff;
-  max-width: 1000px;
-  text-shadow: 1px 1px 1px #000;
-  /* margin-top: -20px; */
-  position: relative;
-}
-
-.main_box p {
-  text-align: center;
-  font-size: 14px;
 }
 
 .nav_box {
@@ -310,7 +327,6 @@ main {
 
 .shiatsu_box {
   position: relative;
-  border-left: 1px solid rgba(245, 245, 245, 0.75);
   background: url("images/shiatsu_massage.jpg");
   background-position: center;
   background-size: cover;
@@ -345,7 +361,6 @@ main {
 }
 
 .stone_box {
-  border-top: 1px solid rgba(245, 245, 245, 0.75);
   background: url("images/stones.jpg");
   background-position: center;
   background-size: cover;
@@ -363,9 +378,10 @@ table {
   background-size: cover;
   position: relative;
   border-collapse: collapse;
+  font-weight: bold;
   border-spacing: 0;
   width: 100%;
-  border: 1px solid #fff;
+  border-top: 1px solid #fff;
   text-align: center;
 }
 
@@ -379,12 +395,12 @@ td {
 }
 
 tr:nth-child(even) {
-  background: rgba(0, 191, 255, 0.5);
+  color: #000;
+  background: rgba(0, 191, 255, 0.85);
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
 tr:nth-child(odd) {
-  font-weight: bold;
   font-size: 1.15rem;
 }
 
@@ -451,7 +467,8 @@ ul {
     margin-left: 20px;
   }
 
-  .deep_box:hover .overlay {
+  .deep_box:hover .overlay,
+  .shiatsu_box:hover .overlay {
     height: 80%;
   }
 
@@ -485,8 +502,8 @@ ul {
     transition: height 500ms ease;
   }
 
-  .shiatsu_box:hover .overlay {
-    height: 80%;
+  .stone_box {
+    border-top: 1px solid rgba(245, 245, 245, 0.75);
   }
 
   .therapy_container_1 {
@@ -508,10 +525,6 @@ ul {
 
 /* GREATER THAN 1000px WIDE SCREENS */
 @media (min-width: 1000px) {
-  .aroma_box {
-    border-top: 1px solid rgba(245, 245, 245, 0.75);
-  }
-
   .benefits_box {
     display: grid;
     grid-template-columns: 1fr;
@@ -537,7 +550,7 @@ ul {
   }
 
   footer {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   footer img {
@@ -605,10 +618,6 @@ ul {
     height: 0;
     margin: 0;
     transition: height 500ms ease;
-  }
-
-  .stone_box {
-    border-left: 1px solid rgba(245, 245, 245, 0.75);
   }
 
   table {
