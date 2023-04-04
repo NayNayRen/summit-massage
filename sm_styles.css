@@ -15,14 +15,21 @@
 }
 
 .aroma_box {
+  -ms-flex-direction: column;
+  -ms-flex-pack: justify;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: justify;
   background: url("images/incense_3.jpg");
   background-position: center;
   background-size: cover;
-  position: relative;
-  min-height: 200px;
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 200px;
+  position: relative;
 }
 
 .aroma_box p {
@@ -77,6 +84,7 @@ body {
 }
 
 .contact_container {
+  display: -ms-grid;
   display: grid;
   text-align: center;
   position: relative;
@@ -92,15 +100,22 @@ body {
 }
 
 .deep_box {
-  border-top: 1px solid rgba(245, 245, 245, 0.75);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   background: url("images/deep_massage_2.jpg");
   background-position: center;
   background-size: cover;
-  position: relative;
-  min-height: 200px;
+  border-top: 1px solid rgba(245, 245, 245, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 200px;
+  position: relative;
 }
 
 .deep_box p {
@@ -110,26 +125,19 @@ body {
 }
 
 .fa-facebook {
-  background: #3b5998;
+  background-color: #3b5998;
 }
 .fa-twitter {
-  background: #55acee;
+  background-color: #55acee;
 }
 .fa-google {
-  background: #dd4b39;
+  background-color: #dd4b39;
 }
 .fa-linkedin {
-  background: #007bb5;
+  background-color: #007bb5;
 }
 .fa-instagram {
-  background: #125688;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 5s;
-  animation-name: fade;
-  animation-duration: 5s;
+  background-color: #125688;
 }
 
 footer {
@@ -143,7 +151,7 @@ footer {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.75);
   border-top: 1px solid #fff;
-  color: #ffffff;
+  color: #fff;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -158,12 +166,13 @@ footer {
 }
 
 footer img {
-  border: 0;
-  width: 50px;
+  -webkit-transform: translateY(-50%);
+  border: none;
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+  width: 50px;
 }
 
 h2 {
@@ -173,20 +182,30 @@ h2 {
 }
 
 h3 {
+  color: rgba(0, 191, 255, 1);
   font-size: 20px;
   font-weight: bold;
-  color: rgba(0, 191, 255, 1);
   margin-left: 5px;
   text-shadow: 0 1px 1px #000;
 }
 
 .hamburger_menu {
+  -ms-flex-align: center;
+  -ms-flex-direction: column;
+  -ms-flex-pack: space-evenly;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: space-evenly;
+  -webkit-box-shadow: 0 2px 15px #000;
   align-items: center;
   background-color: #000;
   border-bottom: 1px solid #fff;
   border-right: 1px solid #fff;
   box-shadow: 0 2px 15px #000;
   cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   flex-direction: column;
   height: 50px;
@@ -198,11 +217,12 @@ h3 {
 }
 
 .hamburger_menu_bar {
-  width: 40px;
-  height: 2px;
+  -webkit-transition: all 250ms ease;
   background-color: #fff;
+  height: 2px;
   opacity: 1;
   transition: all 250ms ease;
+  width: 40px;
 }
 
 .header_box {
@@ -214,44 +234,47 @@ h3 {
 }
 
 .hamburger_bar_two_rotate {
+  -webkit-transform: rotate(45deg);
   background-color: rgba(0, 191, 255, 1);
-  transform: rotate(45deg);
   position: absolute;
   top: 50%;
+  transform: rotate(45deg);
 }
 
 .hamburger_bar_three_rotate {
+  -webkit-transform: rotate(-45deg);
   background-color: rgba(0, 191, 255, 1);
-  transform: rotate(-45deg);
   position: absolute;
   top: 50%;
+  transform: rotate(-45deg);
 }
 
 .header_container {
+  -webkit-box-shadow: 0 2px 15px #000;
   background-color: #000;
-  box-shadow: 0 2px 15px #000;
-  width: 100%;
-  height: auto;
   border-bottom: 1px solid #fff;
+  box-shadow: 0 2px 15px #000;
+  height: auto;
   padding: 0;
   position: fixed;
   top: 0;
+  width: 100%;
   z-index: 10;
 }
 
 .header_name {
-  font-size: 30px;
   color: #fff;
+  font-size: 30px;
   margin: 0;
   padding: 20px 0 10px 10px;
 }
 
 .header_slogan {
-  font-style: italic;
-  font-size: 18px;
   color: rgba(0, 191, 255, 1);
-  padding: 0 0 20px 10px;
   display: block;
+  font-size: 18px;
+  font-style: italic;
+  padding: 0 0 20px 10px;
   text-align: left;
 }
 
@@ -264,6 +287,10 @@ html {
 }
 
 .hours_container {
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   justify-content: center;
 }
@@ -279,14 +306,14 @@ main {
 }
 
 .main_box p {
-  text-align: center;
   font-size: 16px;
+  text-align: center;
 }
 
 .main_container {
   background-color: rgba(0, 0, 0, 0.85);
-  border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
   padding-top: 125px;
   position: relative;
 }
@@ -296,26 +323,37 @@ main {
 }
 
 .nav_box {
+  -ms-flex-align: center;
+  -ms-flex-direction: column;
+  -ms-flex-pack: space-evenly;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: space-evenly;
+  -webkit-transition: right 250ms ease;
   align-items: center;
   background-color: #000;
+  border-left: 1px solid #fff;
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   height: 100%;
+  justify-content: space-evenly;
   position: absolute;
   right: -100%;
-  top: 0;
   text-align: center;
-  border-left: 1px solid #fff;
-  width: 150px;
+  top: 0;
   transition: right 250ms ease;
+  width: 150px;
 }
 
 .nav_box a {
-  text-decoration: none;
-  transition: color 250ms ease;
+  -webkit-transition: color 250ms ease;
   color: #fff;
   font-size: 16px;
+  text-decoration: none;
+  transition: color 250ms ease;
 }
 
 .nav_box a:hover {
@@ -327,14 +365,21 @@ main {
 }
 
 .shiatsu_box {
-  position: relative;
+  -ms-flex-direction: column;
+  -ms-flex-pack: justify;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: justify;
   background: url("images/shiatsu_massage_2.jpeg");
   background-position: center;
   background-size: cover;
-  min-height: 200px;
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 200px;
+  position: relative;
 }
 
 .shiatsu_box p {
@@ -344,42 +389,69 @@ main {
 }
 
 .social_box {
+  -ms-flex-align: center;
+  -ms-flex-direction: row;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
 }
 
 .social_box a {
+  -ms-flex-align: center;
+  -ms-flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-transition: opacity 500ms ease;
+  align-items: center;
+  color: #fff;
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  padding: 10px;
   font-size: 25px;
-  width: 40px;
   height: 40px;
+  justify-content: center;
+  margin: 5px 2px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
   transition: opacity 500ms ease;
+  width: 40px;
 }
 
 .social_box a:hover {
+  -webkit-transition: opacity 500ms ease;
   opacity: 0.7;
   transition: opacity 500ms ease;
 }
 
 .stone_box {
+  -ms-flex-direction: column;
+  -ms-flex-pack: justify;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: justify;
   background: url("images/stones_2.jpeg");
   background-position: center;
   background-size: cover;
-  position: relative;
-  min-height: 200px;
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 200px;
+  position: relative;
 }
 
 .stone_box p {
@@ -397,13 +469,13 @@ table {
   background: url("images/candle_2.jpg");
   background-position: center;
   background-size: cover;
-  position: relative;
   border-collapse: collapse;
-  font-weight: bold;
   border-spacing: 0;
-  width: 100%;
   border-top: 1px solid #fff;
+  font-weight: bold;
+  position: relative;
   text-align: center;
+  width: 100%;
 }
 
 td {
@@ -411,32 +483,35 @@ td {
 }
 
 .teal_text {
+  color: rgba(0, 191, 255, 1);
   font-size: 18px;
   font-weight: bold;
-  color: rgba(0, 191, 255, 1);
 }
 
 tr:nth-child(even) {
-  color: #000;
   background-color: rgba(0, 191, 255, 0.85);
-  border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  color: #000;
 }
 tr:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
 .therapy_container_1 {
+  display: -ms-grid;
   display: grid;
 }
 
 .therapy_container_2 {
+  display: -ms-grid;
   display: grid;
 }
 
 .top_button:hover {
+  -webkit-transition: color 250ms ease;
   color: rgba(245, 245, 245, 0.25);
-  transition: color 500ms ease;
+  transition: color 250ms ease;
 }
 
 ul {
@@ -444,17 +519,18 @@ ul {
 }
 
 .up_button {
-  font-size: 16px;
-  text-decoration: none;
-  padding: 5px;
-  color: #000;
-  transition: color 250ms ease;
+  -webkit-transition: color 250ms ease;
   background: rgba(0, 191, 255, 1);
   border-radius: 5px 0px 0px 0px;
+  bottom: 0;
+  color: #000;
+  font-size: 16px;
+  padding: 5px;
   position: absolute;
   right: 0;
+  text-decoration: none;
   text-shadow: none;
-  bottom: 0;
+  transition: color 250ms ease;
 }
 
 /* GREATER THAN 700px WIDE SCREENS */
@@ -481,8 +557,8 @@ ul {
   }
 
   .benefits_box {
-    max-width: 100%;
     margin-left: 20px;
+    max-width: 100%;
   }
 
   .deep_box {
@@ -507,20 +583,30 @@ ul {
   }
 
   .overlay {
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-transition: height 500ms ease;
+    align-items: center;
+    background: rgba(0, 191, 255, 1);
+    bottom: 0;
+    color: #000;
+    display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-    position: absolute;
-    text-shadow: none;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 191, 255, 1);
-    overflow: hidden;
     height: 0;
+    justify-content: center;
+    left: 0;
     margin: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-shadow: none;
     transition: height 500ms ease;
   }
 
@@ -551,6 +637,7 @@ ul {
   }
 
   .benefits_box {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -601,13 +688,13 @@ ul {
   }
 
   .main_container {
-    width: 100%;
     margin-top: 20px;
+    width: 100%;
   }
 
   .main_box {
-    margin: auto;
     height: 100%;
+    margin: auto;
   }
 
   .main_box p {
@@ -626,21 +713,9 @@ ul {
     color: rgba(245, 245, 245, 0.25);
   }
 
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 191, 255, 1);
-    overflow: hidden;
-    height: 0;
-    margin: 0;
-    transition: height 500ms ease;
-  }
-
   table {
-    width: 700px;
     margin-top: 50px;
+    width: 700px;
   }
 
   .teal_text {
