@@ -173,13 +173,10 @@ footer h5:last-of-type {
   margin-top: 0;
 }
 
-footer img {
-  -webkit-transform: translateY(-50%);
-  border: none;
+.footer-logo {
+  bottom: 10px;
+  left: 10px;
   position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
   width: 50px;
 }
 
@@ -504,7 +501,7 @@ tr:nth-child(even) {
   color: #000;
 }
 tr:nth-child(odd) {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .therapy_container_1 {
@@ -667,10 +664,6 @@ ul {
 
   footer {
     margin-top: 20px;
-  }
-
-  footer img {
-    width: 75px;
   }
 
   h2 {
