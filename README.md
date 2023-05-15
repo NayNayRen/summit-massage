@@ -1,4 +1,7 @@
-This website was created for a fake massage company called Summit Massage.
-It was my first use of smooth scrolling and page locations for the navigation of each section.
-I personally like the color scheme and tone of this project.
-Thank you for stopping by. :-)
+This website was created for a ficticious massage company.
+
+The idea came from a friend who is a licensed massage therapist and owned her massage company.
+
+The stack used is HTML, CSS and some vanilla JavaScript.
+
+Thank you for stopping by.
