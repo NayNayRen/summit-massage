@@ -1,11 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway&display=swap");
-
 /* 400px to 700px WIDE SCREENS */
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 #about,
 #benefits,
 #contact,
@@ -20,7 +13,7 @@
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-box-pack: justify;
-  background: url("images/incense_3.jpg");
+  background: url("../images/incense_3.jpg");
   background-position: center;
   background-size: cover;
   display: -ms-flexbox;
@@ -43,38 +36,32 @@
 }
 
 .benefits_box li:nth-of-type(even) {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .benefits_box ul {
-  margin: 0;
-  padding: 0;
   width: 100%;
 }
 
 body {
-  background: url("images/night_sky.jpg");
+  background: url("../images/night_sky.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   font-family: "Raleway", sans-serif;
-  height: 100vh;
-  margin: 0;
-  overflow-x: hidden;
-  padding: 0;
 }
 
 .black_background {
   background-color: rgba(0, 0, 0, 0.95);
-  border-top: 1px solid rgba(245, 245, 245, 0.75);
+  border-top: 1px solid #fff;
   padding: 5px;
   margin: 0;
 }
 
 .black_background_2 {
   background-color: rgba(0, 0, 0, 0.95);
-  border-top: 1px solid rgba(245, 245, 245, 0.75);
+  border-top: 1px solid #fff;
   padding: 5px;
   margin: 0;
 }
@@ -92,7 +79,7 @@ body {
 
 .contact_box p {
   font-weight: bold;
-  margin-bottom: -2px;
+  /* margin-bottom: -2px; */
 }
 
 .contact_box span {
@@ -105,10 +92,10 @@ body {
   -ms-flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  background: url("images/deep_massage_2.jpg");
+  background: url("../images/deep_massage_2.jpg");
   background-position: center;
   background-size: cover;
-  border-top: 1px solid rgba(245, 245, 245, 0.75);
+  border-top: 1px solid #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,15 +114,19 @@ body {
 .fa-facebook {
   background-color: #3b5998;
 }
+
 .fa-twitter {
   background-color: #55acee;
 }
+
 .fa-google {
   background-color: #dd4b39;
 }
+
 .fa-linkedin {
   background-color: #007bb5;
 }
+
 .fa-instagram {
   background-color: #125688;
 }
@@ -149,7 +140,7 @@ footer {
   -webkit-box-orient: vertical;
   -webkit-box-pack: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #000;
   border-top: 1px solid #fff;
   color: #fff;
   display: -ms-flexbox;
@@ -159,25 +150,19 @@ footer {
   font-size: 16px;
   font-weight: bold;
   justify-content: center;
-  min-height: 75px;
   padding: 5px 0;
   position: relative;
   text-align: center;
 }
 
-footer h5:first-of-type {
-  margin-bottom: 0;
-}
-
-footer h5:last-of-type {
-  margin-top: 0;
-}
-
 .footer-logo {
-  bottom: 10px;
-  left: 10px;
-  position: absolute;
+  margin: 5px auto 0 auto;
   width: 50px;
+}
+
+.footer-logo img {
+  height: auto;
+  width: 100%;
 }
 
 h2 {
@@ -188,7 +173,7 @@ h2 {
 
 h3 {
   color: rgba(0, 191, 255, 1);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   margin-left: 5px;
   text-shadow: 0 1px 1px #000;
@@ -284,14 +269,6 @@ h3 {
   text-align: left;
 }
 
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  width: 100%;
-}
-
 .hours_container {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
@@ -324,7 +301,7 @@ main {
   position: relative;
 }
 
-.main_container ~ .main_container {
+.main_container~.main_container {
   padding-top: 0;
 }
 
@@ -376,7 +353,7 @@ main {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-box-pack: justify;
-  background: url("images/shiatsu_massage_2.jpeg");
+  background: url("../images/shiatsu_massage_2.jpeg");
   background-position: center;
   background-size: cover;
   display: -ms-flexbox;
@@ -448,7 +425,7 @@ main {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-box-pack: justify;
-  background: url("images/stones_2.jpeg");
+  background: url("../images/stones_2.jpeg");
   background-position: center;
   background-size: cover;
   display: -ms-flexbox;
@@ -472,7 +449,7 @@ main {
 }
 
 table {
-  background: url("images/candle_2.jpg");
+  background: url("../images/candle_2.jpg");
   background-position: center;
   background-size: cover;
   border-collapse: collapse;
@@ -500,6 +477,7 @@ tr:nth-child(even) {
   border-top: 1px solid #fff;
   color: #000;
 }
+
 tr:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.75);
 }
@@ -541,6 +519,7 @@ ul {
 
 /* GREATER THAN 700px WIDE SCREENS */
 @media (min-width: 700px) {
+
   .aroma_box:hover .overlay,
   .deep_box:hover .overlay,
   .shiatsu_box:hover .overlay,
@@ -568,7 +547,7 @@ ul {
   }
 
   .deep_box {
-    border-top: 1px solid rgba(245, 245, 245, 0.75);
+    border-top: 1px solid #fff;
   }
 
   .header_name {
@@ -617,7 +596,7 @@ ul {
   }
 
   .stone_box {
-    border-top: 1px solid rgba(245, 245, 245, 0.75);
+    border-top: 1px solid #fff;
   }
 
   .teal_text {
@@ -635,6 +614,7 @@ ul {
 
 /* GREATER THAN 1000px WIDE SCREENS */
 @media (min-width: 1000px) {
+
   .aroma_box,
   .deep_box,
   .shiatsu_box,
@@ -685,7 +665,6 @@ ul {
 
   li {
     font-size: 18px;
-    margin-left: 0;
     padding: 15px;
   }
 
@@ -740,11 +719,6 @@ ul {
   .therapy_container_2 {
     grid-template-columns: 40% 60%;
     max-width: 100%;
-  }
-
-  ul {
-    list-style-type: none;
-    margin-top: -1px;
   }
 
   .up_button {
